@@ -1,4 +1,4 @@
-# laravel-vue-socket-rest-api
+# laravel-vue-socket-api
 
 Project research tentang socket.io, dengan menggunakan Laravel sebagai Backend dan Vue sebagai Frontend, dan secara terpisah.
 
