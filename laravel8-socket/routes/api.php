@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\BidController;
+use App\Http\Controllers\MessageController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -19,5 +19,5 @@ use Illuminate\Support\Facades\Route;
 //     return $request->user();
 // });
 
-Route::get('/show', [BidController::class, 'show']);
-Route::post('/create', [BidController::class, 'create']);
+Route::post('/send', [MessageController::class, 'send']);
+    

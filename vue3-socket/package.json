@@ -1,5 +1,5 @@
 {
-  "name": "fe-socket",
+  "name": "vue3-socket",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,26 +8,20 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "@vue/composition-api": "^1.2.4",
-    "axios": "^0.23.0",
-    "core-js": "^3.19.0",
+    "axios": "^0.24.0",
+    "core-js": "^3.6.5",
     "laravel-echo": "^1.11.2",
     "socket.io-client": "^2.4.0",
-    "vue": "^2.6.11",
-    "vuex": "^3.6.2"
+    "vue": "^3.0.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
-    "@vue/cli-plugin-vuex": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
-    "autoprefixer": "^9.8.8",
+    "@vue/compiler-sfc": "^3.0.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
-    "eslint-plugin-vue": "^6.2.2",
-    "postcss": "^7.0.39",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17",
-    "vue-template-compiler": "^2.6.11"
+    "eslint-plugin-vue": "^7.0.0"
   },
   "eslintConfig": {
     "root": true,
@@ -35,7 +29,7 @@
       "node": true
     },
     "extends": [
-      "plugin:vue/essential",
+      "plugin:vue/vue3-essential",
       "eslint:recommended"
     ],
     "parserOptions": {

@@ -4,15 +4,18 @@ namespace App\Events;
 
 use Illuminate\Broadcasting\Channel;
 use Illuminate\Broadcasting\InteractsWithSockets;
+use Illuminate\Broadcasting\PresenceChannel;
+use Illuminate\Broadcasting\PrivateChannel;
+use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
 use Illuminate\Contracts\Broadcasting\ShouldBroadcastNow;
 use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Queue\SerializesModels;
 
-class EveryoneBid implements ShouldBroadcastNow
+class MessageEvent implements ShouldBroadcastNow
 {
     use Dispatchable, InteractsWithSockets, SerializesModels;
 
-    public $price;
+    public $message;
 
     /**
      * The name of the queue connection to use when broadcasting the event.
@@ -33,9 +36,9 @@ class EveryoneBid implements ShouldBroadcastNow
      *
      * @return void
      */
-    public function __construct($price)
+    public function __construct($message)
     {
-        $this->price = $price;
+        $this->message = $message;
     }
 
     /**
