@@ -49,3 +49,6 @@ Laravel
 
 # if successfully 
 ![alt text](https://user-images.githubusercontent.com/58780032/138805496-ed7ab51e-c29e-49cf-bdd8-a46376e3b712.png)
+
+
+refrensi : https://gist.github.com/brainlagid/15666f13c5b27c4f8f5702559473c240?fbclid=IwAR2Yh_lQ_wwnGsg53G8BIOCyn0m43IxEzSHpWcLfGveJ7GY8emkehkBKM8c
