@@ -1,17 +1,59 @@
 <template>
   <div>
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="See console log or inspect element to view data socket" />
+    <div class="product-card bg-yellow-300 items-center h-screen">
+      <div class="flex justify-center p-5">
+        <!-- <div class="mr-3" v-if="user">
+          <img width="50" height="50" :src="user.photoURL" alt="fotoGmail" />
+        </div> -->
+        <!-- <button
+          v-if="!isLogin"
+          @click="signIn"
+          class="
+            px-10
+            py-4
+            bg-blue-400
+            text-white text-xs
+            font-bold
+            uppercase
+            rounded
+          "
+        >
+          Sign In
+        </button>
+        <button
+          v-else
+          @click="signOut"
+          class="
+            px-10
+            py-4
+            bg-blue-400
+            text-white text-xs
+            font-bold
+            uppercase
+            rounded
+          "
+        >
+          Sign Out
+        </button> -->
+      </div>
+      <div class="flex p-1 justify-around">
+        <!-- <template v-for="data in data.cars" :key="data.id"> -->
+        <ProductCard />
+        <!-- </template> -->
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+// import HelloWorld from "./components/HelloWorld.vue";
+import ProductCard from "./components/ProductCard.vue";
 
 export default {
   name: "App",
   components: {
-    HelloWorld
+    // HelloWorld,
+    ProductCard
   },
   mounted() {
     window.Echo.channel("EveryoneChannel").listen(".EveryoneMessage", function(
@@ -22,14 +64,3 @@ export default {
   }
 };
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
