@@ -9,6 +9,7 @@ Laravel
 - Composer [here](https://getcomposer.org/download/)
 - npm `sudo apt install nodejs npm`
 - laravel-echo-server `npm install -g laravel-echo-server`
+- turn on redis `redis-server`
 
 # Laravel Dependencies Requirement
 - predis
